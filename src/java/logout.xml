@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="logout" extends="struts-default">
+          <action name="actionLogout" class="actions.logout.Logout">
+              <result name="input">logout.jsp</result>
+        <result name="success">logout.jsp</result>
+        <result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>

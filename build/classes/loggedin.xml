@@ -1,0 +1,33 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+     <package name="loggedin" extends="struts-default">
+         
+          <action name="actionHome">
+        <result>index.jsp</result>
+        </action>
+        
+        <action name="actionTournaments">
+        <result>user-details/tournaments/tournaments.jsp</result>
+        </action>
+        
+        <action name="actionAddcash">
+        <result>user-details/addcash/addcash.jsp</result>
+        </action>
+        
+        <action name="actionMyaccount">
+        <result>user-details/myaccount/myaccount.jsp</result>
+        </action>
+        
+        <action name="actionBringfriend">
+        <result>user-details/bringfriend/bringfriend.jsp</result>
+        </action>
+        
+        </package>
+        
+</struts>

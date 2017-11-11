@@ -1,0 +1,134 @@
+html, body {border: 0; margin: 0; padding: 0;}
+
+body {
+  	font: 85%/0.9 arial, helvetica, sans-serif;
+	background-image:url(../images/bg_whowe.gif);
+  	line-height: 130%;
+  	width: 100%;
+  	min-width: 970px;
+  	color: black;
+}
+
+a {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00CCFF;
+}
+
+a img {
+  border: none;/*remove border for linked images*/
+}
+
+h1 {
+	font-size: 1.6em;
+	height: 20px;
+	padding-top: 0;
+}
+
+h2{
+	font-size: 1.2em;
+	height: 20px;
+	padding-top: 0;
+}
+
+.highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
+
+/***** Main Layout ****/
+#container {
+  	width: 100%;
+  	height: 100%;
+  	text-align: left;/* IE fix to center the page */
+}
+
+#content {
+  	width: 740px;
+  	margin: 0 auto;/* center the page in Firefox */
+  	text-align: left;
+	padding: 20px;
+}
+#abovecontent ,#belowcontent{
+	width: 900px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	height:170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#belowcontent{	
+	margin-top:42px;
+	//background-color:white;
+	width:102%;
+	margin-left:5px;:
+
+}
+
+#belowcontent p img{
+	width:50%;
+	height:50%;
+	float :left;
+
+	margin-right:5px;
+	padding-top:15px;
+}
+#belowcontent p{
+
+	font-family:Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+	/*letter-spacing:1px;*/
+	color:#505961;
+	//background-image: url(../images/text-background.gif);
+	padding-bottom:1px;		
+	padding-right:0px;
+}
+#quote {
+	position: fixed;
+	/*bottom: 135px;
+	right: 0px;*/
+	top:7px;
+	left:0px;
+}
+#quote img {
+	border: none;
+}
+#quote a:link {
+	border: none;
+}
+#quote a:visited {
+	border: none;
+}
+
+#imagerollover{
+	
+	height:250px;
+	margin:5px;
+	margin-top:8px;
+	padding:0px;
+	
+}
+#imagerollover img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#between
+{
+	height:20%;
+}
+#footer {
+  //background-image:url(../images/background-footer.jpg);
+  color:            #505961;
+  text-align:       center;
+  padding:          15px;
+  margin:           10px;
+  font-size:        90%;
+}
+#page{
+	width:800px;
+	margin:auto;
+}

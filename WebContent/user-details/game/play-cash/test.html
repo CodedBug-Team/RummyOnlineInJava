@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="css/card.css" type="text/css" media="screen" />
+      <script src="js/jquery-1.4.2.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.core.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.widget.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.mouse.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.draggable.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.sortable.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#sortable").sortable({
+			revert: true
+		});
+		$("#draggable").draggable({
+			connectToSortable: '#sortable',
+			helper: 'clone',
+			revert: 'invalid'
+		});
+		$("ul, li").disableSelection();
+	});
+	</script>
+<style type="text/css">
+	.demo ul { list-style-type: none; margin: 0; padding: 0; margin-bottom: 10px; }
+	.demo li { margin: 5px; padding: 5px; width: 150px; }
+	</style>
+    </head>
+    <body>
+       
+<div class="demo">
+	
+<ul>
+	<li id="draggable" class="ui-state-highlight">Drag me down</li>
+</ul>
+
+<ul id="sortable">
+	<li class="ui-state-default">Item 1</li>
+	<li class="ui-state-default">Item 2</li>
+	<li class="ui-state-default">Item 3</li>
+	<li class="ui-state-default">Item 4</li>
+	<li class="ui-state-default">Item 5</li>
+</ul>
+
+</div><!-- End demo -->
+
+<div class="demo-description">
+
+<p>
+Draggables are built to interact seamlessly with <a href="#">sortables</a>.
+</p>
+
+</div>
+
+
+<div id="navigation"> 
+	<ul>
+    	<li class="blue"><a href="#">Blue</a></li>
+		<li class="green"><a href="#">Green</a></li>
+		<li class="orange"><a href="#">Orange</a></li>
+		<li class="red"><a href="#">Red</a></li>
+	</ul>
+</div>
+
+
+<div class="container">
+
+    <div class="fake_img">:)</div>
+    <div class="fake_img">=P</div>
+    <div class="fake_img">B(</div>
+</div>
+
+<p><a href="http://yahoo.com" onclick="window.open('http://google.com');
+   ">Click to open Google and Yahoo</a></p>
+    </body>
+</html>

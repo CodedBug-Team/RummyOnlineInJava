@@ -1,0 +1,68 @@
+* { padding: 0; margin: 0; }
+
+body {
+ background-image:url(../images/header-bg-inside_phixr.png);
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#leftcolumn { 
+ color: #333;
+border-right:1px solid rgb(134,134,134);
+ margin: 80px 0px 10px 0px;
+ padding: 5px;
+padding-left:1px;
+ padding-top: 10px;
+padding-right:20px;
+ height: 350px;
+ width: 439px;
+ float: left;
+}
+#rightcolumn,#right { 
+ float: right;
+  font-size:1.5em;
+ color: BLACK;
+  width: 439px;
+  margin-top:190px;
+ display: inline;
+ position: relative;
+}
+#right
+{
+  margin-top:100px;	
+}
+label
+{
+	color:rgb(134,134,134);
+	margin:0px;
+}
+
+.button {
+    border: .5px dotted;
+    margin-left:113px;
+    color:rgb(134,134,134);
+    font-size:1em;
+    background-image:url(../images/header-bg-inside_phixr.png);
+    padding: 2px 8px;
+}
+.button:hover {
+    border: 1px solid rgb(134,134,134);
+    color:rgb(243,164,92);
+    background-image:url(../images/header-bg-inside_phixr.png);
+    padding: 2px 8px;
+}
+
+#leftcolumn a img,#right a img
+{
+	border-style:none;
+}
+
+#leftcolumn a:hover img ,#right a:hover img
+{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	
+}

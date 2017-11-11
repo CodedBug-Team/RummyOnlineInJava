@@ -1,0 +1,231 @@
+* { padding: 0; margin: 0; }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 13px;
+background-image:url(../images/header-bg-inside_phixr.png);
+
+
+}
+#wrapper { 
+ margin: 0 auto;
+ width: 922px;
+}
+#header {
+ width: 900px;
+ color: #333;
+ padding: 10px;
+ //border: 1px solid #ccc;
+ height: 100px;
+ margin: 10px 0px 5px 0px;
+}
+#header p img
+{
+	float:right;
+}
+#leftcolumn { 
+ color: #333;
+border-right:1px solid rgb(134,134,134);
+ margin: -30px 0px 20px 0px;
+ padding: 5px;
+padding-left:50px;
+ padding-top: 0px;
+padding-right:70px;
+ height: 365px;
+ width: 309px;
+ float: left;
+}
+#rightcolumn,#right { 
+ float: left;
+  font-size:1.5em;
+ color: BLACK;
+  width: 39px;
+margin: -30px 0px 30px 30px;
+display: inline;
+ position: relative;
+}
+
+#right3 {
+ float: left;
+  font-size:1.5em;
+ color: BLACK;
+  width: 39px;
+margin: 370px 0px -30px -220px;
+display: inline;
+ position: relative;
+}
+
+label
+{
+	color:rgb(134,134,134);
+	margin:0px;
+}
+
+.button {
+    border: .5px dotted;
+    margin-left:113px;
+    color:rgb(134,134,134);
+    font-size:1em;
+    background-image:url(../images/header-bg-inside_phixr.png);
+    padding: 2px 8px;
+}
+.button:hover {
+    border: 1px solid rgb(134,134,134);
+    color:rgb(243,164,92);
+    background-image:url(../images/header-bg-inside_phixr.png);
+    padding: 2px 8px;
+}
+
+
+#header h1
+{
+	color:rgb(243,164,92);
+	font-size:40px;
+	margin-top:30px;
+}
+
+
+#header h4
+{
+	color:rgb(134,134,134);
+	font-size:20px;
+	padding-left:130px;
+	margin-right:420px;
+	border-top:1px rgb(243,164,92) solid;
+	border-bottom:1px rgb(243,164,92) solid;
+}
+
+#navigation {
+ width: 900px;
+ color: rgb(243,164,92);
+ padding: 10px;
+// border: 1px solid #ccc;
+ margin: 0px 0px 5px 0px;
+}
+#navigation p
+{
+	float:right;	
+}
+#navigation p a
+{
+	text-decoration:none;	
+	margin-right:10px;
+	padding-right:10px;
+	color:#957639;
+	
+}
+#leftcolumn a img,#right a img
+{
+	border-style:none;
+}
+
+#leftcolumn a:hover img ,#right a:hover img,#right3 a:hover img
+{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	
+}
+
+#navigation p a:hover
+{	
+	font-weight:bolder;	
+	font-size:1.2em;
+}
+
+#link
+{
+	border-right:2px solid white;	
+}
+
+
+#content { 
+ width: 900px;
+ color: #333;
+ border: 1px solid #ccc;
+ margin: 0px 0px 5px 0px;
+ padding: 10px;
+ height: 350px;
+}
+table
+{
+	color:#FFF;
+	//background:transparent url(images/raceybluecf.gif) repeat top left;
+	border-collapse:collapse;
+	width:100%;
+	font-size:1.2em;
+        margin: 20px 40px 40px 8px;
+	//border:5px solid ;
+}
+
+thead th
+{
+	padding:1em 1em .5em;
+ 	
+ 	font-size:120%;
+ 	text-align:left;
+	background:transparent url(images/x.jpg) repeat top left;
+
+}
+
+
+
+thead tr
+{
+	border:1px ;
+        margin: 40px 20px 40px 20px;
+        padding: 5px;
+
+td
+{
+	padding:5px;
+        margin : 10px 10px 10px 10px;
+	border:1px ;
+}
+
+
+
+tbody tr.odd td
+{
+	background:transparent url(images/x.jpg) repeat top left;
+}
+
+
+
+
+
+* html tr.odd td
+{
+	background:#C00;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/x.jpg', sizingMethod='scale');
+}
+
+#content table tbody tr td a:hover img 
+{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	
+}
+#leftcolumn1 a img,#right2 a img
+{
+	border-style:none;
+}
+
+#leftcolumn1 a:hover img ,#right2 a:hover img,#right3 a:hover img
+{
+	opacity:0.4;
+	filter:alpha(opacity=40);
+	
+}
+
+
+
+
+
+
+#footer { 
+ width: 900px;
+ color: #333;
+// border: 1px solid #ccc;
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek --> 
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    
+    <package name="login" extends="struts-default">
+
+       <action name="actionLogin" class="actions.login.Login">
+              <!--<interceptor-ref name="completeStack" />  
+              <interceptor-ref name="execAndWait">
+                  <param name="delay">2000</param>
+                  <param name="delaySleepInterval">50</param>
+                  </interceptor-ref>
+              
+              <result name="wait">welcome-message.jsp</result>-->
+              <!--<interceptor-ref name="tokenSession"/>
+    <interceptor-ref name="basicStack"/>-->
+              <result name="input">index.jsp</result>
+               <result name="success">user-details/welcome-message.jsp</result>
+<!--        <result name="success">user-details/loggedin.jsp</result>-->
+        <!--<result name="invalid.token">invalid.jsp</result>-->
+        <result name="error">error.jsp</result>
+        </action>
+        
+        <action name="action" class="actions.Wait">
+              <interceptor-ref name="completeStack" />  
+              <interceptor-ref name="execAndWait">
+                  <param name="delay">2000</param>
+                  <param name="delaySleepInterval">50</param>
+                  </interceptor-ref>
+              
+              <result name="wait">welcome-message.jsp</result>
+              
+               <result name="success">success.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        
+        </package>
+</struts>

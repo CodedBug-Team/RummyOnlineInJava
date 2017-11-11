@@ -1,0 +1,17 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+     <package name="register" extends="struts-default">
+          <action name="actionRegister" class="actions.register.Register">
+        <result name="input">index.jsp</result>
+        <result name="olduser">error.jsp</result>
+        <result name="success">success.jsp</result>
+        <result name="error">error.jsp</result>
+        </action>
+    </package>
+</struts>

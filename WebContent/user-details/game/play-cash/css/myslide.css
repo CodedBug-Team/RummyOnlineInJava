@@ -1,0 +1,30 @@
+/* 
+    Document   : myslide
+    Created on : 19 Jul, 2012, 11:53:36 AM
+    Author     : Abhishek
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#nav {
+	padding: 5px;;
+
+	}
+	#nav li {
+	display: inline;
+	}
+	#nav li a {
+	font-family: Arial;
+	font-size:15px;
+	text-decoration: none;
+	float:left;
+	padding:15px  30px 15px 25px;
+	background-color: #2175bc;
+	color: #fff;
+	}
+	#nav li a:hover {
+	//background-color: #2586d7;
+	margin-top: 2px;
+	padding-bottom:18px;
+	opacity:0.4;
+	filter:alpha(opacity=40);
+}

@@ -1,0 +1,28 @@
+/* 
+    Document   : gamesidebar
+    Created on : 1 Jul, 2012, 5:57:06 PM
+    Author     : Abhishek
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#v-menu {
+    float:left;
+    height:100%;
+    position:fixed;
+    background-color:#CCC;
+    width:200px;
+    display:none;
+}​
+
+ul.v-menu, .v-menu li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.v-menu {
+    clear: both;
+    margin-top: 6px;
+    padding: 6px 10px;
+}

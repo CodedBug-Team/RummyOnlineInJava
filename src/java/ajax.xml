@@ -1,0 +1,25 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package name="ajax" extends="struts-default">
+          <action name="AjaxTest" class="actions.Hello">
+        <result name="success">success.jsp</result>
+        <result name="error">error.jsp</result>
+        </action>
+        <action name="jama" class="actions.JAMA">
+        <result name="success">success.jsp</result>
+        <result name="error">error.jsp</result>
+        <result name="stream">
+            <param name="contentType">text/html</param>
+        <param name="inputName">inputStream</param>
+        </result>
+        
+        </action>
+        
+    </package>
+</struts>

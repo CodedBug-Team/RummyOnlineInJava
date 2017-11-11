@@ -1,0 +1,40 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    
+     <package name="general-details" extends="struts-default">
+          <action name="actionAbout-us">
+        <result>general-details/about-us.jsp</result>
+        </action>
+        
+        <action name="actionPrivacy-policy">
+        <result>general-details/privacy-policy.jsp</result>
+        </action>
+        
+        <action name="actionTerms-conditions">
+        <result>general-details/terms-conditions.jsp</result>
+        </action>
+        
+        <action name="actionLegality">
+        <result>general-details/legality.jsp</result>
+        </action>
+        
+        <action name="actionContact-us">
+        <result>general-details/contact-us.jsp</result>
+        </action>
+        
+        <action name="actionHelp">
+        <result>general-details/help.jsp</result>
+        </action>
+        
+        <action name="actionCertification">
+        <result>general-details/certification.jsp</result>
+        </action>
+        
+    </package>
+</struts>

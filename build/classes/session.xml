@@ -1,0 +1,50 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+    <package extends="struts-default" name="session" >
+
+    <interceptors>
+<interceptor name="SessionCheck" class="actions.session.SessionCheckInterceptor"/>
+<interceptor-stack name="newStack">
+<interceptor-ref name="SessionCheck"></interceptor-ref>
+<interceptor-ref name="defaultStack"></interceptor-ref>
+</interceptor-stack>
+</interceptors>
+
+
+
+<!--<default-interceptor-ref name="SessionCheck"/>
+<global-results>
+<result name="invalidSession">index.jsp</result>
+</global-results>-->
+
+<!-- If we need to apply interceptor for a particular action -->
+
+<!--<action name="initAction" class="com.action.LoginAction" method="init">
+<interceptor-ref name="newStack">
+</interceptor-ref>
+<result name="invalidsession">index.jsp</result>
+<result name="success">welcome.jsp</result>
+</action>-->
+
+<action name="hello" class="actions.Hello">
+    <interceptor-ref name="newStack">
+</interceptor-ref>
+<result name="invalidsession">index.jsp</result>
+<result name="success">welcome.jsp</result>
+</action>
+
+<action name="accessSession" class="actions.GettingSession">
+    <interceptor-ref name="newStack">
+</interceptor-ref>
+<result name="invalidsession">index.jsp</result>
+<result name="success">user-details/session-result.jsp</result>
+</action>
+
+</package>
+</struts>

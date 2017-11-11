@@ -1,0 +1,16 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+     <package name="contactus" extends="struts-default">
+          
+        <action name="contactus" class="actions.contactus.ContactUS">
+            <result name="error">error.jsp</result>
+        <result name="success">general-details/confirm-contactus.jsp</result>
+        </action>
+        </package>
+</struts>

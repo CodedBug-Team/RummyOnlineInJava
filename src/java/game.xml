@@ -1,0 +1,72 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<!-- Author: Abhishek -->
+ 
+<struts>
+    <!-- Add your configuration elements here -->
+     <package name="game" extends="struts-default">
+          
+        <!--<action name="actionPlayfree" class="actions.game.PlayFree">
+        <result name="success">user-details/game/play-free.jsp</result>
+        </action>-->
+        
+        <action name="actionPlayfree" >
+        <result>user-details/game/play-free.jsp</result>
+        </action>
+        
+        <!--<action name="actionPlaycash" class="actions.game.PlayCash">
+        <result name="success">user-details/game/play-cash.jsp</result>
+        </action>-->
+        
+        <action name="actionPlaycash">
+        <result>user-details/game/play-cash.jsp</result>
+        </action>
+        
+        <action name="actionAddpayment" class="actions.addcash.AddCash">
+            <result name="error">error.jsp</result>
+        <result name="success">success.jsp</result>
+        </action>
+        
+        <action name="myremoteactionone" class="actions.game.playcash.CashTournament">
+            <result name="error">error.jsp</result>
+        <result name="success">user-details/game/play-cash/tournament.jsp</result>
+        </action>
+         
+        <action name="myremoteactionone1" class="actions.game.playcash.CashTournament">
+            <result name="error">error.jsp</result>
+        <result name="success">user-details/game/play-cash/tournament.jsp</result>
+        </action>
+       
+        
+        <action name="genarategame" class="actions.generategame.GenerateGame">
+            <result name="error">error.jsp</result>
+            <result name="success">success.jsp </result>
+        <!--<result name="chain" type="redirectAction">chain</result>-->
+        </action>
+        <!--<action name="chain" class="">
+        <result>error.jsp</result>
+    </action>-->
+    
+        <action name="actionCashTournamentJoin" class="actions.game.playcash.PlayCashTournament">
+         <result name="error">error.jsp</result>
+          <result name="input" >user-details/game/play-cash/play-cash-tournament.jsp</result>
+        <!--<result name="success" type="redirect-action">-->
+            <result name="success" >user-details/game/play-cash/play-cash-tournament.jsp
+            <!--<param name="actionName">user-details/game/play-cash/play-cash-tournament.jsp</param>-->
+        <!--<param name="parse">true</param>
+        <param name="cash_tournament_num1">%{#session.cashtournament1}</param>
+        <param name="entryfee">%{entryfee}</param>
+        <param name="prize">%{prize}</param>
+        <param name="maxjoined">%{maxjoined}</param>-->
+        </result>
+        </action>
+        
+        <action name="updatecashtable" class="actions.game.playcash.UpdateCashTable">
+        <result name="success">success.jsp</result>
+        <result name="error">error.jsp</result>
+        </action>
+        
+        </package>
+</struts>

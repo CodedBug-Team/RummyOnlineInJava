@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE validators PUBLIC '-//OpenSymphony Group//XWork Validator 1.0.2//EN' 'http://www.opensymphony.com/xwork/xwork-validator-1.0.2dtd'>
+
+<validators>
+    <field name="username">
+
+                <field-validator type="requiredstring">
+
+                        <param name="trim">true</param>
+
+                        <message>User Name is Required</message>
+
+                </field-validator>
+
+        </field>
+        
+        <field name="password">
+
+                <field-validator type="requiredstring">
+
+                        <param name="trim">true</param>
+
+                        <message>Password is required</message>
+
+                </field-validator>
+
+        </field>
+        
+        <field name="email">
+
+                <field-validator type="requiredstring">
+
+                        <param name="trim">true</param>
+
+                        <message>Email is required</message>
+
+                </field-validator>
+                
+
+        </field>
+        
+        <field name="email">
+
+                <field-validator type="email">
+
+                        <param name="trim">true</param>
+
+                        <message>Enter a vaild Email</message>
+
+                </field-validator>
+                
+
+        </field>
+        
+        <field name="gender">
+
+                <field-validator type="requiredstring">
+
+                        <param name="trim">true</param>
+
+                        <message>Gender is required</message>
+
+                </field-validator>
+
+        </field>
+        
+        <field name="dob">
+
+                <field-validator type="requiredstring">
+
+                        <param name="trim">true</param>
+
+                        <message>Date of Birth is required</message>
+
+                </field-validator>
+
+        </field>
+        
+       <!-- <field name="checkme">
+            
+            <field-validator type="fieldexpression">
+                
+                <param name="expression"><![CDATA[checkme.length>0]]></param>
+                
+                <message>You must agree the terms and condition</message>
+                
+                </field-validator>
+                
+            </field>-->
+            
+</validators>

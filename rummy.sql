@@ -173,7 +173,7 @@ CREATE TABLE `user_details` (
 
 LOCK TABLES `user_details` WRITE;
 /*!40000 ALTER TABLE `user_details` DISABLE KEYS */;
-INSERT INTO `user_details` VALUES (2,'Abhishek','abhishek','abhishek.smile09@gmail.com','Male','1989-08-08','Haryana','9555559613');
+INSERT INTO `user_details` VALUES (2,'Abhishek','abhishek','abhishek@gmail.com','Male','1989-08-08','Haryana','9555559613');
 /*!40000 ALTER TABLE `user_details` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
